@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique — Parapharmacie Atlantic View | Salé</title>
+  <meta name="description" content="La boutique en ligne de la Parapharmacie Atlantic View à Salé : soins du visage, solaires, bébé & maman, compléments alimentaires, beauté. Commandez via WhatsApp.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%2317898c'/%3E%3Ctext x='50' y='66' font-size='44' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EAV%3C/text%3E%3Crect x='12' y='12' width='76' height='76' rx='20' fill='none' stroke='%23c79a3b' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Parapharmacie Atlantic View — Accueil">
+        <span class="brand-mark">AV</span>
+        <span class="brand-text">
+          <strong>Atlantic View</strong>
+          <small>Parapharmacie</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Accueil</a></li>
+          <li><a class="nav-link" href="about.html">À propos</a></li>
+          <li><a class="nav-link active" href="shop.html">Boutique</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-teal btn-sm nav-cta" href="shop.html">Découvrir la boutique</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/>
+            <path d="M2.5 3h2l2.6 12.6a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/>
+          </svg>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <main>
+    <!-- ============ EN-TÊTE DE PAGE ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a> › <span>Boutique</span>
+        </nav>
+        <span class="eyebrow">Sélection & conseils</span>
+        <h1>La boutique</h1>
+        <p style="color:var(--c-muted);max-width:560px;margin-top:10px">
+          Toutes nos références, choisies main dans la main avec notre pharmacien.
+          Ajoutez vos produits au panier puis confirmez simplement la commande sur WhatsApp — livraison ou retrait en boutique.
+        </p>
+        <div class="about-pills">
+          <span>🚚 Livraison à Salé & Rabat</span>
+          <span>🛍️ Retrait gratuit en boutique</span>
+          <span>💚 Conseil offert par WhatsApp</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUTILS DE RECHERCHE ============ -->
+    <section class="section" aria-label="Catalogue produits">
+      <div class="container">
+        <div class="shop-toolbar reveal">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input class="search-input" id="shopSearch" type="search" placeholder="Rechercher un produit ou une marque…" aria-label="Rechercher un produit">
+          </div>
+          <label class="sr-only" for="shopSort">Trier les produits</label>
+          <select class="sort-select" id="shopSort" aria-label="Trier">
+            <option value="reco">Les plus populaires</option>
+            <option value="asc">Prix croissant</option>
+            <option value="desc">Prix décroissant</option>
+          </select>
+        </div>
+
+        <div class="filter-chips reveal" role="group" aria-label="Filtrer par catégorie">
+          <button class="chip active" data-filter="all">Tous</button>
+          <button class="chip" data-filter="visage">Soins du visage</button>
+          <button class="chip" data-filter="solaire">Solaires</button>
+          <button class="chip" data-filter="bebe">Bébé & maman</button>
+          <button class="chip" data-filter="nutrition">Compléments alimentaires</button>
+          <button class="chip" data-filter="maquillage">Maquillage & Beauté</button>
+        </div>
+
+        <div class="shop-results reveal" id="shopResults" aria-live="polite"></div>
+
+        <div class="products-grid" id="shopGrid">
+          <div class="shop-empty" style="grid-column:1/-1">Chargement…</div>
+        </div>
+
+        <div class="shop-empty" id="shopEmpty" style="display:none">
+          <b>Aucun produit trouvé</b>
+          <p>Essayez un autre mot-clé ou consultez nos <button class="chip" data-filter="all" style="display:inline-flex">catégories</button>.</p>
+        </div>
+
+        <div class="cta-band" style="margin-top:56px">
+          <div class="container">
+            <h2>Vous ne trouvez pas votre produit ?</h2>
+            <p>Nous pouvons le commander spécialement pour vous. Écrivez-nous — notre pharmacien vous répond rapidement, 7j/7.</p>
+            <a class="btn btn-teal" href="https://wa.me/212606716097?text=Bonjour%2C%20je%20recherche%20un%20produit%20que%20je%20ne%20trouve%20pas%20sur%20votre%20site." target="_blank" rel="noopener">Demander un produit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <span class="brand footer-mini">
+            <span class="brand-mark">AV</span>
+            <span class="brand-text"><strong style="color:#fff">Atlantic View</strong><small style="color:var(--c-gold-soft)">Parapharmacie</small></span>
+          </span>
+          <p>Votre partenaire santé, beauté et bien-être à Salé. Une équipe à votre écoute, un large choix de marques premium et des prix qui respectent votre budget.</p>
+          <div class="footer-social">
+            <a class="social-btn" href="https://www.instagram.com/paraatlanticview" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="social-btn" href="https://wa.me/212606716097" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="shop.html">Boutique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#quiz">Diagnostic peau express</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Horaires & contact</h4>
+          <ul class="footer-hours">
+            <li><span>Tous les jours</span><span>10h – 22h</span></li>
+            <li><span>Dimanche</span><span>10h – 22h</span></li>
+          </ul>
+          <ul class="footer-contact" style="margin-top:16px">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M3 5v4h4"/><circle cx="12" cy="12" r="1"/></svg>
+              <span>Résidence Atlantic View, Magasin N°3, Route Bouchouk, Salé 11000</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+              <span><a href="tel:+212606716097">06 06 71 60 97</a> · WhatsApp</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <span>@paraatlanticview</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Parapharmacie Atlantic View — Salé, Maroc. Tous droits réservés.</span>
+        <span>Santé · Beauté · Bien-être — <a href="contact.html">Venez nous rencontrer</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ PANIER (drawer / bottom-sheet) ============ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Panier" role="dialog" aria-modal="true">
+    <header class="cart-head">
+      <h3>Votre panier</h3>
+      <button class="cart-close" data-close-cart aria-label="Fermer le panier">✕</button>
+    </header>
+    <div class="cart-body" id="cartBody"></div>
+    <footer class="cart-foot">
+      <div class="cart-total">
+        <span>Total estimé</span>
+        <strong id="cartTotal">0 DH</strong>
+      </div>
+      <button class="btn btn-whatsapp btn-block" id="checkoutBtn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+        Commander via WhatsApp
+      </button>
+      <p class="cart-hint">Votre commande est envoyée à notre pharmacien, qui confirme la disponibilité et le retrait.</p>
+    </footer>
+  </aside>
+
+  <!-- ============ BOUTONS FLOTTANTS ============ -->
+  <a class="wa-float" href="https://wa.me/212606716097?text=Bonjour%20%F0%9F%91%8B%2C%20je%20souhaite%20parler%20%C3%A0%20un%20pharmacien%20de%20la%20Parapharmacie%20Atlantic%20View." target="_blank" rel="noopener" aria-label="Parler à un pharmacien sur WhatsApp">
+    <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+    <span class="wa-label">Besoin de conseils ?<small>Parlez à notre pharmacien</small></span>
+  </a>
+
+  <button class="to-top" id="toTop" aria-label="Retour en haut de page">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7 7 7-7 7Z"/><path d="M5 3h14"/></svg>
+  </button>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

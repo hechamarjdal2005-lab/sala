@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parapharmacie Atlantic View — Santé, beauté & bien-être à Salé</title>
+  <meta name="description" content="Parapharmacie Atlantic View à Salé : conseils personnalisés, grandes marques (The Ordinary, Vichy, Covermark, Lansinoh…), prix attractifs. Ouvert tous les jours 10h–22h.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%2317898c'/%3E%3Ctext x='50' y='66' font-size='44' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EAV%3C/text%3E%3Crect x='12' y='12' width='76' height='76' rx='20' fill='none' stroke='%23c79a3b' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Parapharmacie Atlantic View — Accueil">
+        <span class="brand-mark">AV</span>
+        <span class="brand-text">
+          <strong>Atlantic View</strong>
+          <small>Parapharmacie</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li><a class="nav-link" href="about.html">À propos</a></li>
+          <li><a class="nav-link" href="shop.html">Boutique</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-teal btn-sm nav-cta" href="shop.html">Découvrir la boutique</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/>
+            <path d="M2.5 3h2l2.6 12.6a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 7H6"/>
+          </svg>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Présentation">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Salé · Résidence Atlantic View</span>
+          <h1 class="hero-title">Parapharmacie<br><span>Atlantic View</span></h1>
+          <p class="hero-tag">Votre partenaire santé, beauté et bien-être</p>
+          <p class="hero-sub">Une sélection pointue de grandes marques internationales, des conseils personnalisés de votre pharmacien et des prix attractifs — au cœur de Salé, tous les jours de 10h à 22h.</p>
+          <div class="hero-cta">
+            <a class="btn btn-coral" href="shop.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              Découvrir la boutique
+            </a>
+            <a class="btn btn-ghost" href="#quiz">⚡ Diagnostic peau express</a>
+          </div>
+          <ul class="hero-meta">
+            <li>
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.6 7 .9-5.1 5 1.3 7L12 18.7 5.7 21.5 7 14.5 2 9.5l7-.9z"/></svg>
+              <span><strong>4,3 / 5</strong> · 22 avis clients</span>
+            </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Ouvert 7j/7 · 10h – 22h</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M3 5v4h4"/><circle cx="12" cy="12" r="1"/></svg><span>Conseil d'expert offert</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:.15s">
+          <div class="hero-img hero-img-a">
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80" alt="Sélection de soins visage premium" loading="eager">
+          </div>
+          <div class="hero-img hero-img-b">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80" alt="Routine beauté conseillée par notre pharmacien" loading="lazy">
+          </div>
+          <div class="hero-img hero-img-c">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=500&q=80" alt="Soin cosmétique expert" loading="lazy">
+          </div>
+          <div class="hero-float-badge">
+            <span class="ico">🌿</span>
+            <span>Conseil personnalisé<small>par notre pharmacien, gratuit</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OFFRE DU MOMENT + COMPTE À REBOURS ============ -->
+    <section class="container" aria-label="Offre du moment">
+      <div class="promo">
+        <div class="promo-inner">
+          <div>
+            <span class="promo-tag">🔥 Offre du moment</span>
+            <h2 class="promo-title">1 écran solaire acheté = le 2<sup>e</sup> <strong>offert</strong></h2>
+            <p class="promo-sub">Sur toute la sélection Covermark Rayblock SPF50+ — jusqu'à épuisement du stock, en boutique ou via WhatsApp.</p>
+          </div>
+          <div>
+            <ul class="countdown" id="countdown" aria-label="Fin de l'offre">
+              <li><span class="cd-num" data-cd="j">00</span><span class="cd-label">Jours</span></li>
+              <li><span class="cd-num" data-cd="h">00</span><span class="cd-label">Heures</span></li>
+              <li><span class="cd-num" data-cd="m">00</span><span class="cd-label">Minutes</span></li>
+              <li><span class="cd-num" data-cd="s">00</span><span class="cd-label">Sec</span></li>
+            </ul>
+            <div style="margin-top:14px">
+              <a class="btn btn-coral btn-sm" href="shop.html?cat=solaire">J'en profite →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- ============ NOS CATÉGORIES ============ -->
+    <section class="section" aria-labelledby="cat-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Nos rayons</span>
+          <h2 id="cat-title">Des catégories pensées pour toute la famille</h2>
+          <p>De votre routine visage à la trousse de bébé, retrouvez ce qu'il faut pour prendre soin de vous — avec les conseils en boutique.</p>
+        </div>
+        <div class="cats-grid">
+          <a class="cat-card reveal" href="shop.html?cat=visage" style="--d:0s">
+            <img class="cat-img" src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=80" alt="Soins du visage" loading="lazy">
+            <div class="cat-card-content">
+              <div><h3>Soins du visage</h3><span>Sérums, crèmes & routine</span></div>
+              <span class="cat-count">360</span>
+            </div>
+          </a>
+          <a class="cat-card reveal" href="shop.html?cat=solaire" style="--d:.06s">
+            <img class="cat-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="Solaires" loading="lazy">
+            <div class="cat-card-content">
+              <div><h3>Solaires</h3><span>Protection SPF50+ invisible</span></div>
+              <span class="cat-count">13</span>
+            </div>
+          </a>
+          <a class="cat-card reveal" href="shop.html?cat=bebe" style="--d:.12s">
+            <img class="cat-img" src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=700&q=80" alt="Bébé et maman" loading="lazy">
+            <div class="cat-card-content">
+              <div><h3>Bébé & maman</h3><span>Allaitement, soins douceur</span></div>
+              <span class="cat-count">40</span>
+            </div>
+          </a>
+          <a class="cat-card reveal" href="shop.html?cat=nutrition" style="--d:.18s">
+            <img class="cat-img" src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=700&q=80" alt="Compléments alimentaires" loading="lazy">
+            <div class="cat-card-content">
+              <div><h3>Compléments alimentaires</h3><span>Vitalité & équilibre</span></div>
+              <span class="cat-count">35</span>
+            </div>
+          </a>
+          <a class="cat-card reveal" href="shop.html?cat=maquillage" style="--d:.24s">
+            <img class="cat-img" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Maquillage et beauté" loading="lazy">
+            <div class="cat-card-content">
+              <div><h3>Maquillage & Beauté</h3><span>Correcteurs, soins ongles</span></div>
+              <span class="cat-count">27</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUES (carrousel défilant) ============ -->
+    <section class="brands section" aria-labelledby="brands-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Les marques</span>
+          <h2 id="brands-title">Les plus grandes marques, réunies pour vous</h2>
+          <p>Un assortiment pointu, cultivé avec notre pharmacien : les références que vous cherchez, sans jamais vous perdre.</p>
+        </div>
+      </div>
+      <div class="brands-viewport reveal">
+        <div class="brand-track">
+          <span class="brand-chip"><span>The ORDINARY<small>Actifs purs</small></span></span>
+          <span class="brand-chip"><span>VICHY<small>Dermo-expertise</small></span></span>
+          <span class="brand-chip"><span>COVERMARK<small>Protection solaire</small></span></span>
+          <span class="brand-chip"><span>LANSINOH<small>Allaitement</small></span></span>
+          <span class="brand-chip"><span>LA ROCHE-POSAY<small>Peaux sensibles</small></span></span>
+          <span class="brand-chip"><span>AVÈNE<small>Douceur dermato</small></span></span>
+          <span class="brand-chip"><span>APOSÈCHE<small>Solaires experts</small></span></span>
+          <span class="brand-chip"><span>MUSTELA<small>Enfance</small></span></span>
+          <span class="brand-chip"><span>The ORDINARY<small>Actifs purs</small></span></span>
+          <span class="brand-chip"><span>VICHY<small>Dermo-expertise</small></span></span>
+          <span class="brand-chip"><span>COVERMARK<small>Protection solaire</small></span></span>
+          <span class="brand-chip"><span>LANSINOH<small>Allaitement</small></span></span>
+          <span class="brand-chip"><span>LA ROCHE-POSAY<small>Peaux sensibles</small></span></span>
+          <span class="brand-chip"><span>AVÈNE<small>Douceur dermato</small></span></span>
+          <span class="brand-chip"><span>APOSÈCHE<small>Solaires experts</small></span></span>
+          <span class="brand-chip"><span>MUSTELA<small>Enfance</small></span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIAGNOSTIC PEAU EXPRESS ============ -->
+    <section class="section" id="quiz" aria-labelledby="quiz-title">
+      <div class="container">
+        <div class="quiz">
+          <div class="quiz-inner">
+            <div class="quiz-head reveal">
+              <span class="eyebrow">Découvrez votre routine</span>
+              <h2 id="quiz-title">Diagnostic Peau Express</h2>
+              <p>4 questions, 30 secondes. Obtenez une recommandation personnalisée de notre pharmacien et le trio de soins qu'il propose à vos semblables.</p>
+              <div class="about-pills" style="margin-top:18px">
+                <span>🕒 30 secondes</span>
+                <span>🔒 Sans inscription</span>
+                <span>💡 Recommandation d'expert</span>
+              </div>
+            </div>
+
+            <div class="quiz-body reveal" style="--d:.1s">
+              <div class="quiz-progress"><div class="quiz-bar" id="quizBar"></div></div>
+
+              <form class="quiz-step active">
+                <p class="quiz-hint">Question 1 sur 4</p>
+                <h3 class="quiz-q">Quel est votre type de peau ?</h3>
+                <div class="quiz-opts">
+                  <label class="quiz-opt"><input type="radio" name="type" value="normale"><span></span> Normale / mixte</label>
+                  <label class="quiz-opt"><input type="radio" name="type" value="seche"><span></span> Sèche</label>
+                  <label class="quiz-opt"><input type="radio" name="type" value="grasse"><span></span> Grasse / à imperfections</label>
+                  <label class="quiz-opt"><input type="radio" name="type" value="sensible"><span></span> Sensible / réactive</label>
+                </div>
+              </form>
+
+              <form class="quiz-step">
+                <p class="quiz-hint">Question 2 sur 4</p>
+                <h3 class="quiz-q">Quelle est votre préoccupation principale ?</h3>
+                <div class="quiz-opts">
+                  <label class="quiz-opt"><input type="radio" name="besoin" value="hydratation"><span></span> Raviver mon éclat & hydrater</label>
+                  <label class="quiz-opt"><input type="radio" name="besoin" value="imperfections"><span></span> Affiner les pores & imperfections</label>
+                  <label class="quiz-opt"><input type="radio" name="besoin" value="age"><span></span> Prévenir les premiers signes de l'âge</label>
+                  <label class="quiz-opt"><input type="radio" name="besoin" value="soleil"><span></span> Me protéger du soleil</label>
+                  <label class="quiz-opt"><input type="radio" name="besoin" value="apaiser"><span></span> Calmer les rougeurs / irritations</label>
+                </div>
+              </form>
+
+              <form class="quiz-step">
+                <p class="quiz-hint">Question 3 sur 4</p>
+                <h3 class="quiz-q">À quelle fréquence êtes-vous exposé·e au soleil ?</h3>
+                <div class="quiz-opts">
+                  <label class="quiz-opt"><input type="radio" name="soleil" value="souvent"><span></span> Tous les jours</label>
+                  <label class="quiz-opt"><input type="radio" name="soleil" value="parfois"><span></span> De temps en temps</label>
+                  <label class="quiz-opt"><input type="radio" name="soleil" value="rare"><span></span> Rarement</label>
+                </div>
+              </form>
+
+              <form class="quiz-step">
+                <p class="quiz-hint">Question 4 sur 4</p>
+                <h3 class="quiz-q">Votre rituel beauté idéal, c'est plutôt… ?</h3>
+                <div class="quiz-opts">
+                  <label class="quiz-opt"><input type="radio" name="routine" value="simple"><span></span> Simple : l'essentiel, efficace</label>
+                  <label class="quiz-opt"><input type="radio" name="routine" value="nature"><span></span> Naturel & doux pour ma peau</label>
+                  <label class="quiz-opt"><input type="radio" name="routine" value="complet"><span></span> Complet : je raffine ma routine</label>
+                  <label class="quiz-opt"><input type="radio" name="routine" value="pro"><span></span> Des actifs de marques expertes</label>
+                </div>
+              </form>
+
+              <div class="quiz-nav">
+                <button type="button" class="btn btn-ghost btn-sm" data-quiz-back style="opacity:0;pointer-events:none">← Retour</button>
+                <span style="font-family:var(--ff-head);font-weight:600;font-size:.82rem;color:var(--c-muted)"><span id="quizCount">1</span>/4</span>
+              </div>
+
+              <div class="quiz-result" id="quizResult"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- ============ PRODUITS POPULAIRES ============ -->
+    <section class="section section--soft" aria-labelledby="pop-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Les favoris</span>
+          <h2 id="pop-title">Nos best-sellers du moment</h2>
+          <p>Les produits que nos clients adorent et que vous nous réclamez le plus — en stock, à prix attractifs.</p>
+        </div>
+        <div class="products-grid" id="featuredGrid">
+          <div class="shop-empty" style="grid-column:1/-1">Chargement…</div>
+        </div>
+        <div class="shop-bar-cta reveal">
+          <a class="btn btn-teal" href="shop.html">Voir toute la boutique</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POURQUOI NOUS CHOISIR ============ -->
+    <section class="section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Notre promesse</span>
+          <h2 id="why-title">Pourquoi les Salétines nous font confiance</h2>
+          <p>Plus qu'une parapharmacie : un lieu où l'on vous connaît, vous écoute et vous conseille.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <h3>Conseils personnalisés</h3>
+            <p>Notre pharmacien prend le temps de vous écouter et de composer la routine qui vous correspond vraiment.</p>
+          </div>
+          <div class="why-card reveal" style="--d:.06s">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9L10 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg></div>
+            <h3>Large choix de marques</h3>
+            <p>The Ordinary, Vichy, Covermark, Lansinoh, Avène… un assortiment pointu pour trouver la perle rare à Salé.</p>
+          </div>
+          <div class="why-card reveal" style="--d:.12s">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3>Prix attractifs</h3>
+            <p>Des offres et promotions régulières et une sélection premier prix de qualité, pour votre pouvoir d'achat.</p>
+          </div>
+          <div class="why-card reveal" style="--d:.18s">
+            <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.3 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3.4 1-4.5 2.5C10.9 4 9.3 3 7.5 3A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.2 3 5.5l7 6z"/></svg></div>
+            <h3>Accueil chaleureux</h3>
+            <p>Une équipe souriante, disponible et bienveillante : on entre inconnu·e, on ressort client·e fidèle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AVIS CLIENTS ============ -->
+    <section class="section section--soft" aria-labelledby="rev-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Vos témoignages</span>
+          <h2 id="rev-title">Ce que nos clients disent de nous</h2>
+        </div>
+
+        <div class="reviews-wrap reveal">
+          <div class="reviews-score">
+            <div class="big-score">4,3<small>/5</small></div>
+            <div class="rev-stars reveal-stars" aria-label="4,3 étoiles sur 5">
+              <span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span><span class="star part">★</span>
+            </div>
+            <p class="rev-total">Basé sur <strong>22 avis</strong> Google</p>
+            <div class="reviews-bars" id="revBars">
+              <div class="bar-row"><span>5★</span><div class="bar" data-bar="55"><span></span></div><span>12</span></div>
+              <div class="bar-row"><span>4★</span><div class="bar" data-bar="27"><span></span></div><span>6</span></div>
+              <div class="bar-row"><span>3★</span><div class="bar" data-bar="14"><span></span></div><span>3</span></div>
+              <div class="bar-row"><span>2★</span><div class="bar" data-bar="5"><span></span></div><span>1</span></div>
+              <div class="bar-row"><span>1★</span><div class="bar" data-bar="0"><span></span></div><span>0</span></div>
+            </div>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review-card reveal">
+              <div class="rev-stars"><span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span></div>
+              <p>« Accueil chaleureux et conseils vraiment personnalisés. On sent qu'on vous écoute, pas qu'on essaie de vous vendre. Je suis cliente fidèle depuis l'ouverture ! »</p>
+              <footer>
+                <span class="review-avatar">FZ</span>
+                <div><div class="review-name">Fatima Z.</div><div class="review-role">Cliente fidèle · Avis Google</div></div>
+              </footer>
+            </article>
+
+            <article class="review-card reveal" style="--d:.08s">
+              <div class="rev-stars"><span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span><span class="star">★</span></div>
+              <p>« Un stock impressionnant de marques qu'on ne trouve pas ailleurs à Salé : The Ordinary, Covermark… Le pharmacien m'a conseillé pour toute la famille. »</p>
+              <footer>
+                <span class="review-avatar">KB</span>
+                <div><div class="review-name">Karim B.</div><div class="review-role">Client · Avis Google</div></div>
+              </footer>
+            </article>
+
+            <article class="review-card reveal" style="--d:.16s">
+              <div class="rev-stars"><span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span><span class="star gold">★</span><span class="star">★</span></div>
+              <p>« Très bonne expérience dans l'ensemble. Petite attente le samedi après-midi, mais l'équipe est restée aux petits soins et disponible. »</p>
+              <footer>
+                <span class="review-avatar">SR</span>
+                <div><div class="review-name">Salma R.</div><div class="review-role">Cliente · Avis Google</div></div>
+              </footer>
+              <div class="review-reply">
+                <strong>Réponse de la Parapharmacie Atlantic View</strong>
+                Merci Salma pour votre retour ! Nous renforçons l'accueil aux heures d'affluence : votre fidélité compte beaucoup pour nous.
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section" aria-label="Commander">
+      <div class="container">
+        <div class="cta-band">
+          <div class="container">
+            <h2>Prêt·e à prendre soin de vous ?</h2>
+            <p>Posez vos questions à notre pharmacien ou commandez directement depuis la boutique — réponse rapide par WhatsApp, 7j/7.</p>
+            <div class="hero-cta" style="justify-content:center">
+              <a class="btn btn-teal" href="shop.html">Parcourir la boutique</a>
+              <a class="btn btn-ghost" href="#quiz">Faire le diagnostic peau</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <span class="brand footer-mini">
+            <span class="brand-mark">AV</span>
+            <span class="brand-text"><strong style="color:#fff">Atlantic View</strong><small style="color:var(--c-gold-soft)">Parapharmacie</small></span>
+          </span>
+          <p>Votre partenaire santé, beauté et bien-être à Salé. Une équipe à votre écoute, un large choix de marques premium et des prix qui respectent votre budget.</p>
+          <div class="footer-social">
+            <a class="social-btn" href="https://www.instagram.com/paraatlanticview" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="social-btn" href="https://wa.me/212606716097" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="shop.html">Boutique</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#quiz">Diagnostic peau express</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Horaires & contact</h4>
+          <ul class="footer-hours">
+            <li><span>Tous les jours</span><span>10h – 22h</span></li>
+            <li><span>Dimanche</span><span>10h – 22h</span></li>
+          </ul>
+          <ul class="footer-contact" style="margin-top:16px">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M3 5v4h4"/><circle cx="12" cy="12" r="1"/></svg>
+              <span>Résidence Atlantic View, Magasin N°3, Route Bouchouk, Salé 11000</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+              <span><a href="tel:+212606716097">06 06 71 60 97</a> · WhatsApp</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <span>@paraatlanticview</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Parapharmacie Atlantic View — Salé, Maroc. Tous droits réservés.</span>
+        <span>Santé · Beauté · Bien-être — <a href="contact.html">Venez nous rencontrer</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ PANIER (drawer / bottom-sheet) ============ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Panier" role="dialog" aria-modal="true">
+    <header class="cart-head">
+      <h3>Votre panier</h3>
+      <button class="cart-close" data-close-cart aria-label="Fermer le panier">✕</button>
+    </header>
+    <div class="cart-body" id="cartBody"></div>
+    <footer class="cart-foot">
+      <div class="cart-total">
+        <span>Total estimé</span>
+        <strong id="cartTotal">0 DH</strong>
+      </div>
+      <button class="btn btn-whatsapp btn-block" id="checkoutBtn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+        Commander via WhatsApp
+      </button>
+      <p class="cart-hint">Votre commande est envoyée à notre pharmacien, qui confirme la disponibilité et le retrait.</p>
+    </footer>
+  </aside>
+
+  <!-- ============ BOUTONS FLOTTANTS ============ -->
+  <a class="wa-float" href="https://wa.me/212606716097?text=Bonjour%20%F0%9F%91%8B%2C%20je%20souhaite%20parler%20%C3%A0%20un%20pharmacien%20de%20la%20Parapharmacie%20Atlantic%20View." target="_blank" rel="noopener" aria-label="Parler à un pharmacien sur WhatsApp">
+    <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/></svg>
+    <span class="wa-label">Besoin de conseils ?<small>Parlez à notre pharmacien</small></span>
+  </a>
+
+  <button class="to-top" id="toTop" aria-label="Retour en haut de page">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7 7 7-7 7Z"/><path d="M5 3h14"/></svg>
+  </button>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
